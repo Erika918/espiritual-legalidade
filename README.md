@@ -1,4 +1,4 @@
- # ✨ Espiritual Legalidade ✨
+# ✨ Espiritual Legalidade ✨
 
 💡 **Ideal para quem busca um momento de reflexão e motivação com base na Fé.**
 
@@ -37,6 +37,5 @@ O projeto é desenvolvido com foco em:
 
 ## Como Usar
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/Erika918/espiritual-legalidade.git
+1. Clone o repositório: ```bash
+git clonehttps://github.com/Erika918/espiritual-legalidade.git
