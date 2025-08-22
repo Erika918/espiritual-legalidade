@@ -8,7 +8,7 @@
 
 O **Espiritual Legalidade** é um site que apresenta frases inspiradoras e reflexivas voltadas para motivação espiritual. Cada visita ou clique exibe uma nova frase, proporcionando momentos de reflexão e fortalecimento da fé.
 
-       O projeto é desenvolvido com foco em:
+       O projeto é desenvolvido com foco em
 
 - Experiência leve e intuitiva para o usuário.
 - Interface agradável com cores harmoniosas e fundo agradável.
