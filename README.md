@@ -8,7 +8,7 @@
 
 O **Espiritual Legalidade** é um site que apresenta frases inspiradoras e reflexivas voltadas para motivação espiritual. Cada visita ou clique exibe uma nova frase, proporcionando momentos de reflexão e fortalecimento da fé.
 
-O projeto é desenvolvido com foco em:
+<span style= "color:red"> O projeto é desenvolvido com foco em:</span>
 
 - Experiência leve e intuitiva para o usuário.
 - Interface agradável com cores harmoniosas e fundo agradável.
@@ -16,26 +16,28 @@ O projeto é desenvolvido com foco em:
 
 ---
 
-## Funcionalidades
-
-- Exibição de frases motivacionais e espirituais.
-- Atualização automática ou por clique da frase.
-- Informações pessoais flutuantes no canto da tela (opcional).
-- Layout responsivo, compatível com desktop e dispositivos móveis.
-- Tema com cores: dourado, verde musgo e preto.
-
----
-
 ## Tecnologias Utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
-- (Opcional) PWA para instalação no dispositivo
+- **HTML5** → estrutura da aplicação.  
+- **CSS3** → estilização e responsividade.  
+- **JavaScript** → lógica para exibição dinâmica das frases.  
+- **Manifest.json** → configuração do PWA (nome do app, ícones e cores de splash).  
+- **Imagens de Ícones** → utilizadas no `manifest.json` para diferentes resoluções (instalação em celular ou desktop).  
 
 ---
 
-## Como Usar
+## 📱 PWA e Manifest.json
 
-1. Clone o repositório: ```bash
-git clonehttps://github.com/Erika918/espiritual-legalidade.git
+Este projeto pode ser instalado como um **aplicativo web progressivo (PWA)**.  
+O arquivo `manifest.json` é utilizado para:
+
+- Definir o **nome** e a **descrição** do app.  
+- Especificar **ícones em múltiplos tamanhos** para diferentes dispositivos.  
+- Configurar a **cor de fundo** e **cor do tema**.  
+- Permitir a **instalação no celular ou desktop**, garantindo acesso rápido e suporte offline.  
+
+---
+## 🚀 Como Acessar
+
+1. Acesse o site diretamente pelo link:  
+   👉 [Espiritual Legalidade](https://erika918.github.io/espiritual-legalidade/)
