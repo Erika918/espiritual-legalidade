@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frases e Info Dinâmica</title>
+  <title>✨ Legalidade Espiritual ✨</title>
+
+  <!-- Manifest e PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#556B2F" />
+
+  <!-- Ícone -->
+  <link rel="icon" href="icons/icon-192.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <h1>💡 "Frases Que Iluminam e Transformam o Seu Dia!" 💡</h1>
+
+                   <h1 class="flags">✝️ 🔁 🕊️</h1>
+
+
+    <div class="balao-frase" id="balaoFrase">
+      <span id="textoFrase">Carregando frase...</span>
+      <span class="compartilhar" onclick="compartilharFrase()">📤</span>
+    </div>
+
+    <button class="botao-circular" onclick="novaFrase()">Nova<br>Frase ✨</button>
+  </main>
+  
+   <div class="info-flutuante" id="infoFlutuante">
+    
+  <div class="info-header" onclick="toggleInfo()">
+    ✨ Erika Barbosa da Cruz ✨
+    <span class="expand-indicator">▼</span>
+  </div>
+  <div class="info-content">
+    <p>✉️ erikaregis42@gmail.com<br>
+       📱 (31) 97501-1396<br>
+       💻 <a href="https://erika918.github.io/erika918/" target="_blank">Meu GitHub</a><br>
+       🌟 "Nada Faltando, Nada Quebrado, Nada Fora do Lugar!"
+    </p>
+  </div>
+</div>
+
+  <!-- Script principal -->
+  <script src="app.js"></script>
+  
+
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(reg => console.log('SW registrado:', reg.scope))
+          .catch(err => console.error('Erro no SW:', err));
+      });
+    }
+  </script>
+</body>
+</html>
+<script>
+  // Função para carregar uma nova frase
+  function novaFrase() {
+    const frases = [
+      "A vida é feita de escolhas, faça as melhores!",
+      "Cada dia é uma nova oportunidade para ser feliz.",
+      "A gratidão transforma o que temos em suficiente.",
+      "Acredite em si mesmo e tudo será possível.",
+      "O amor é a chave que abre todas as portas."
+    ];
+    const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
+    document.getElementById('textoFrase').innerText = fraseAleatoria;
+  }
+
+  // Função para compartilhar a frase
+  function compartilharFrase() {
+    const texto = document.getElementById('textoFrase').innerText;
+    if (navigator.share) {
+      navigator.share({
+        title: 'Frase Inspiradora',
+        text: texto,
+        url: window.location.href
+      })
+      .then(() => console.log('Compartilhamento bem-sucedido'))
+      .catch(err => console.error('Erro ao compartilhar:', err));
+    } else {
+      alert('Compartilhamento não suportado neste navegador.');
+    }
+  }
+
+  // Carrega uma frase ao iniciar
+  window.onload = novaFrase;    
