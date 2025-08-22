@@ -8,7 +8,7 @@
 
 O **Espiritual Legalidade** é um site que apresenta frases inspiradoras e reflexivas voltadas para motivação espiritual. Cada visita ou clique exibe uma nova frase, proporcionando momentos de reflexão e fortalecimento da fé.
 
-<span style= "color:red"> O projeto é desenvolvido com foco em:</span>
+       O projeto é desenvolvido com foco em:
 
 - Experiência leve e intuitiva para o usuário.
 - Interface agradável com cores harmoniosas e fundo agradável.
@@ -36,8 +36,7 @@ O arquivo `manifest.json` é utilizado para:
 - Configurar a **cor de fundo** e **cor do tema**.  
 - Permitir a **instalação no celular ou desktop**, garantindo acesso rápido e suporte offline.  
 
----
-## 🚀 Como Acessar
+---  ## 🚀Como Acessar
 
 1. Acesse o site diretamente pelo link:  
    👉 [Espiritual Legalidade](https://erika918.github.io/espiritual-legalidade/)
